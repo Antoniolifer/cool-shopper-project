@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react"
 import { CartContext } from "../context/CartContext";
-import FilterCheckBox from "./FilterCheckbox";
+import FilterCheckBox from "./FilterCheckBox";
 import PriceFilter from "./PriceFilter";
 function Filters() {
 
