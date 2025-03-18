@@ -28,6 +28,7 @@ function ProductList() {
     },[setProducts])
     
     useEffect(  () => {
+
         for(let i = 0; i < categoryMap.length; i++){
             if(categoryMap[i].selected === true){
                 setIsFiltering(true);
@@ -46,6 +47,7 @@ function ProductList() {
             return;
         }
         setIsFiltering(false);
+
     }, [categoryMap, priceFilter, deferredSearch]);
     
     const filterCallback = useCallback((item) =>{

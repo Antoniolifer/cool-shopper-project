@@ -29,7 +29,7 @@ function Filters() {
             <PriceFilter />
 
             <label><i>Category</i></label><br/>
-            <div className="flex flex-wrap mx-auto md:mx-0 gap-y-2  justify-center md:block">
+            <div className="flex flex-wrap mx-auto md:mx-0 justify-center md:block">
             {categoryMap.map( cat => {
               return(
                 <FilterCheckBox key={cat.category} category={cat.category} checked={cat.selected} toggleBox={toggleBox}/>
