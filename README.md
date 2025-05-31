@@ -7,6 +7,7 @@ It was developed using **React** (with native React Context) and **Tailwind**.
 
 *Check out the live demo here:* https://cool-shopper-project.netlify.app/
 
+<img width="900" alt="main page showing the layout with many products" src="https://github.com/user-attachments/assets/ff242ea1-a8d1-49ef-ba7e-3fef22f1a87c" />
 
 ## Motivation
 I developed _Cool Shopper_ to explore first-hand the way a typical shopping page works under the hood, and how to make it performant and convenient to use. 
@@ -25,7 +26,9 @@ I developed _Cool Shopper_ to explore first-hand the way a typical shopping page
   - intuitive UI
   - responsive design for mobile, desktop, and everything in-between 
 
-## Optimisation:
+<img width="900" alt="responsiveness showcase" src="https://github.com/user-attachments/assets/e6170cba-1d50-40f5-8fd7-cb5d9592df26" />
+
+## Optimisation
 Filters & searching applies to all products, but with the "infinite list" approach, only a small number of items is initially rendered. 
 Small bundle size - javascript takes 208kB, including the "heavy" dependencies like react-dom. These dependencies can be externalised, to achieve an absolutely tiny bundle size - this would be relevant if the application were to be used for real-life commerce.  
 
@@ -43,7 +46,7 @@ For the sake of making the application more user-controlled and predictable, I c
 Considering this project was a kind of exploration, using Typescript would have slowed down development, and would have made the project architecture too inflexible for the purpose it was meant to serve. 
 
 ## Future of the project 
-As part of my professional ambition, I would like to develop this "slice" into a kind of reusable scaffold structure, that can be used by other developers to build their own shooping fronts, a kind that will be performant, lightweight, and easily customisable. This would be a very interesting professional challenge for me, and it would also bring real value to others. 
+As part of my professional ambition, I would like to develop this "slice" into a reusable scaffold structure, that can be used by other developers to build their own shooping fronts, a kind that will be performant, lightweight, and easily customisable. This would be a very interesting professional challenge for me, and it would also bring real value to others. 
 
 ## Author
 Hi, my name is Anton Serdiuk, I am a front-end developer focused on building thoughtful, interactive applications with Javascript, React and TypeScript. I'm passionate about balancing clean code, UX clarity, and ambitious ideas.
