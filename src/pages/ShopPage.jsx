@@ -1,5 +1,5 @@
 
-import ProductList from "../components/ProductList"
+import ProductContainer from "../components/ProductContainer"
 import ControlBar from '../components/ControlBar'
 import Filters from "../components/Filters"
 
@@ -16,7 +16,7 @@ function ShopPage() {
       <ControlBar />
 
       {/* main  */}
-      <ProductList /> 
+      <ProductContainer /> 
 
 
       {/* pagination - not doing it */}
