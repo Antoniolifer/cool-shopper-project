@@ -38,7 +38,7 @@ function ProductCard({product}) {
         </span>
         <span>
           <p className="mt-1 p-2">{showingMore ? product.description : formatDescription(product.description)}</p>
-          <p className=" cursor-pointer text-center text-gray-800 rounded border-1 border-gray-400 w-1/2 mx-auto" onClick={showToggleHandler}>{showingMore ? 'Show less' : 'Show More'}</p>
+          <p className={`cursor-pointer text-center text-gray-800 hover:bg-gray-100 rounded border-1 border-gray-400 w-1/2 mx-auto`} onClick={showToggleHandler}>{showingMore ? 'Show less' : 'Show More'}</p>
         </span>
         <span className="w-full mx-auto text-center">
           <h1 className="font-semibold text-3xl mt-3">${product.price}</h1>

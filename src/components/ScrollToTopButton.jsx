@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 
 function ScrollToTopButton() {
   const [displayingButton, setDisplayingButton] = useState(false);
-  // console.log(window.scrollY);
   useEffect( ()=>{
     const listenerFunction = () => {
 
@@ -32,7 +31,7 @@ function ScrollToTopButton() {
     return (
       <div 
       onClick ={handleClick}
-      className={`fixed bottom-5 left-10 border-2
+      className={`fixed bottom-1 left-5 md:bottom-5 md:left-10 border-2
   border-gray-500 bg-gray-100 shadow-xl shadow-gray-500/50 
       hover:bg-white cursor-pointer
       rounded-xl py-1 px-3
