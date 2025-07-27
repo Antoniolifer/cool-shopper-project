@@ -1,14 +1,14 @@
-
-import ProductContainer from "../components/ProductContainer"
-import ControlBar from '../components/ControlBar'
-import Filters from "../components/Filters"
+import ProductContainer from "../components/ProductContainer";
+import ControlBar from "../components/ControlBar";
+import Filters from "../components/Filters";
 
 function ShopPage() {
-
   return (
-    <div className='container mx-auto w-full'>
+    <div className="container mx-auto w-full">
       {/* header  */}
-      <h1 className='italic text-center text-2xl underline underline-offset-3 '>Cool Shopper</h1>
+      <h1 className="italic text-center text-2xl underline underline-offset-3 ">
+        Cool Shopper
+      </h1>
 
       {/* filters */}
       <Filters />
@@ -16,13 +16,10 @@ function ShopPage() {
       <ControlBar />
 
       {/* main  */}
-      <ProductContainer /> 
+      <ProductContainer />
 
-
-      {/* pagination - not doing it */}
-      
     </div>
-  )
+  );
 }
 
-export default ShopPage
+export default ShopPage;

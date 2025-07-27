@@ -21,8 +21,6 @@ function ProductContainer() {
   const [isLoading, setIsLoading] = useState(true);
   const deferredSearch = useDeferredValue(search);
   useEffect(() => {
-    // fetch('https://fakestoreapi.com/products')
-    // fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=46')
     const fetchData = async () => {
       await fetch("https://fakestoreapi.in/api/products?limit=150")
         .then((res) => res.json())
@@ -126,14 +124,12 @@ function ProductContainer() {
     return <Loader />;
   }
   return (
-    // <div className="container items-center md:items-stretch flex flex-col md:flex-row flex-wrap gap-4 md:w-8/10 lg:w-9/10 xl:w-9/10 mx-auto justify-center my-2">
     preparedProducts.length === 0 ? (
       <p className="text-center mt-16">
         Unfortunately, no products match your search criteria.
       </p>
     ) : (
-        <InfiniteList products ={preparedProducts} />
-
+      <InfiniteList products={preparedProducts} />
     )
   );
 }
